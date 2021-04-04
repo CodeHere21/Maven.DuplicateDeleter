@@ -27,10 +27,9 @@ public final class StringDuplicateDeleter extends DuplicateDeleter<String> {
     }
 
     public Integer countOccurrences(String word) {
-        String someString[]=array.toString().split(" ");
         Integer count = 0;
-        for (int i = 0; i < someString.length; i++) {
-            if (someString[i].equals(word)) {
+        for (int i = 0; i < this.array.length; i++) {
+            if (this.array[i].equals(word)) {
                 count++;
             }
         }
